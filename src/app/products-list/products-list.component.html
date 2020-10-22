@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+            <th>Stock</th>
+        </tr>
+    </thead>
+        <tbody>
+            <tr *ngFor="let producto of productos">
+                <td>{{producto.nombre}}</td>
+                <td>{{producto.descripcion}}</td>
+                <td>{{producto.precio | currency }}</td>
+                <td><span class="badge badge-danger" *ngIf="producto.stock==0">SIN STOCK</span> <span class="badge badge-success" *ngIf="producto.stock>0">HAY STOCK</span> </td>
+            </tr>
+        </tbody>
+</table>
