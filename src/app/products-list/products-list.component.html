@@ -16,8 +16,9 @@
                 <td><span class="badge badge-danger" *ngIf="producto.stock==0">SIN STOCK</span> 
                     <span class="badge badge-success" *ngIf="producto.stock>0">HAY STOCK</span> </td>
                 <td>
-                    <button type="button" class="btn btn-dark btn-sm" (click)=downCantidad(producto)>-</button>{{producto.cantidad}}<button type="button" 
-                    class="btn btn-dark btn-sm" (click)=upCantidad(producto)>+</button>
+                    <button type="button" class="btn btn-secondary btn-sm" (click)=downCantidad(producto)>-
+                    </button>{{producto.cantidad}}<button type="button"class="btn btn-secondary btn-sm" 
+                    (click)=upCantidad(producto)>+</button>
                 </td>
             </tr>
         </tbody>

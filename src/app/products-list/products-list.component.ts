@@ -32,6 +32,34 @@ export class ProductsListComponent implements OnInit {
     stock: 3,
     cantidad: 0,
   },
+  {
+    nombre: 'Budines',
+    descripcion: 'Budines marmolados, con chips, de vainilla, chocolate, limón y muchos más.',
+    precio: 150,
+    stock: 0,
+    cantidad: 0,
+  },
+  {
+    nombre: 'Tortas',
+    descripcion: 'Tortas de cumpleaños con bizcochulos de vainilla o chocolate, rellena de lo que mas les guste. El precio es por kilo.',
+    precio: 500,
+    stock: 10,
+    cantidad: 0,
+  },
+  {
+    nombre: 'Tarta frutal',
+    descripcion: 'Masa sablée, rellena de crema chantillí con kiwi, frutillas, banana y durazno. ',
+    precio: 400,
+    stock: 4,
+    cantidad: 0,
+  },
+  {
+    nombre: 'Muffins',
+    descripcion: 'Sabor chocolate o vainilla rellenos de dulce de leche o nutella, decorado con crema chantillí o merengue suizo. Ideales para cumpleaños o mesas dulces. El precio es por 6 unidades.',
+    precio: 350,
+    stock: 0,
+    cantidad: 0,
+  },
   ]
 
   constructor() { }

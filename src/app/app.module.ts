@@ -7,6 +7,7 @@ import { ProductsListComponent } from './products-list/products-list.component';
 import { PasteleriaContactoComponent } from './pasteleria-contacto/pasteleria-contacto.component';
 import { PasteleriaComponent } from './pasteleria/pasteleria.component';
 import { CarritoComponent } from './carrito/carrito.component';
+import { FormsModule } from '@angular/forms'
 
 
 
@@ -20,7 +21,8 @@ import { CarritoComponent } from './carrito/carrito.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
