@@ -11,14 +11,13 @@
         <tbody>
             <tr *ngFor="let producto of productos">
                 <td>{{producto.nombre}}</td>
-                <td>{{producto.descripcion}}</td>
+                <td class="descripcion">{{producto.descripcion}}</td>
                 <td>{{producto.precio | currency }}</td>
                 <td><span class="badge badge-danger" *ngIf="producto.stock==0">SIN STOCK</span> 
                     <span class="badge badge-success" *ngIf="producto.stock>0">HAY STOCK</span> </td>
                 <td>
-                    <button type="button" class="btn btn-secondary btn-sm" (click)=downCantidad(producto)>-
-                    </button>{{producto.cantidad}}<button type="button"class="btn btn-secondary btn-sm" 
-                    (click)=upCantidad(producto)>+</button>
+                   <app-input-integer [(cantidad)]="producto.cantidad" [max]="producto.stock" (maxAlcanzado)="maxAlcanzado($event)" *ngIf="producto.stock" > </app-input-integer>
+                   Cant: {{producto.cantidad}}
                 </td>
             </tr>
         </tbody>

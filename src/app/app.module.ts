@@ -7,7 +7,8 @@ import { ProductsListComponent } from './products-list/products-list.component';
 import { PasteleriaContactoComponent } from './pasteleria-contacto/pasteleria-contacto.component';
 import { PasteleriaComponent } from './pasteleria/pasteleria.component';
 import { CarritoComponent } from './carrito/carrito.component';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { InputIntegerComponent } from './input-integer/input-integer.component'
 
 
 
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms'
     ProductsListComponent,
     PasteleriaContactoComponent,
     PasteleriaComponent,
-    CarritoComponent
+    CarritoComponent,
+    InputIntegerComponent
   ],
   imports: [
     BrowserModule,
